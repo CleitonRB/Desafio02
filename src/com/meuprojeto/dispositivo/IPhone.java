@@ -4,17 +4,7 @@ import com.meuprojeto.funcionalidades.musica.ReprodutorMusical;
 import com.meuprojeto.funcionalidades.internet.NavegadorInternet;
 import com.meuprojeto.funcionalidades.telefone.AparelhoTelefonico;
 
-public class IPhone implements Dispositivo, ReprodutorMusical{
-        
-        @Override
-        public void ligar(){
-            System.out.println("Telefone Ligado");
-        }
-
-        @Override
-        public void desligar(){
-            System.out.println("Telefone Desligado");
-        }
+public class IPhone implements ReprodutorMusical, AparelhoTelefonico{
 
         @Override
         public void reproduzirMusica(){
@@ -28,17 +18,35 @@ public class IPhone implements Dispositivo, ReprodutorMusical{
 
         @Override
         public void selecionarMusica(){
-            System.out.println("Musica selecionada " + nome);
+            System.out.println("Musica selecionada");
         }
 
-public static void main(String[] args) {
+        @Override
+        public void fazerChamada(){
+            System.out.println("Iniciando chamada...");
+        }
 
-    IPhone meuIPhone = new IPhone();
+        @Override
+        public void atender(){
+            System.out.println("atendendo chamada");
+        }
 
-    meuIPhone.selecionarMusica("Imagine - John Lennon");
-    meuIPhone.reproduzirMusica("Imagine");
-    meuIPhone.pausarMusica();
+        @Override
+        public void iniciarCorreioVoz(){
+            System.out.println("Deixe sua mensagem...");
+        }
 
-}
+        public static void main(String[] args) {
+
+            IPhone iPhone = new IPhone();
+
+            iPhone.selecionarMusica();
+            iPhone.reproduzirMusica();
+            iPhone.pausarMusica();
+            iPhone.atender();
+            iPhone.fazerChamada();
+            iPhone.iniciarCorreioVoz();
+        
+        }
 
 }

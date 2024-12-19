@@ -1,5 +1,9 @@
 package com.meuprojeto.funcionalidades.telefone;
 
-public class AparelhoTelefonico {
+public interface AparelhoTelefonico {
+
+    void fazerChamada();
+    void atender();
+    void iniciarCorreioVoz();
     
 }

@@ -5,14 +5,16 @@ Interface: Dispositivo
 Interface: ReprodutorMusical
 + reproduzirMusica(): void
 + pausarMusica(): void
-+ selecionarMusica(nome: String): void
++ selecionarMusica(): void
 
 Interface: AparelhoTelefonico
-+ fazerChamada(numero: String): void
-+ encerrarChamada(): void
++ fazerChamada(): void
++ atender(): void
++ iniciarCorreioVoz(): void
 
 Interface: NavegadorInternet
-+ abrirPagina(url: String): void
++ abrirPagina(): void
++ adicionarAba(): void
 + atualizarPagina(): void
 
 Classe: IPhone
@@ -20,8 +22,9 @@ Classe: IPhone
 + desligar(): void
 + reproduzirMusica(): void
 + pausarMusica(): void
-+ selecionarMusica(nome: String): void
-+ fazerChamada(numero: String): void
-+ encerrarChamada(): void
-+ abrirPagina(url: String): void
++ selecionarMusica(): void
++ fazerChamada(): void
++ iniciarCorreioVoz(): void
++ abrirPagina(): void
++ adicionarAba(): void
 + atualizarPagina(): void
