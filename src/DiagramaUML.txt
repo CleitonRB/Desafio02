@@ -1,0 +1,27 @@
+Interface: Dispositivo
++ ligar(): void
++ desligar(): void
+
+Interface: ReprodutorMusical
++ reproduzirMusica(): void
++ pausarMusica(): void
++ selecionarMusica(nome: String): void
+
+Interface: AparelhoTelefonico
++ fazerChamada(numero: String): void
++ encerrarChamada(): void
+
+Interface: NavegadorInternet
++ abrirPagina(url: String): void
++ atualizarPagina(): void
+
+Classe: IPhone
++ ligar(): void
++ desligar(): void
++ reproduzirMusica(): void
++ pausarMusica(): void
++ selecionarMusica(nome: String): void
++ fazerChamada(numero: String): void
++ encerrarChamada(): void
++ abrirPagina(url: String): void
++ atualizarPagina(): void
