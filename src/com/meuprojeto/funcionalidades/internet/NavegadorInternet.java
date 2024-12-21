@@ -1,5 +1,9 @@
 package com.meuprojeto.funcionalidades.internet;
 
-public class NavegadorInternet {
+public interface NavegadorInternet {
+
+    void abrirPagina();
+    void adicionarAba();
+    void atualizarPagina();
     
 }
